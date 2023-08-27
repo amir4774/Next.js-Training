@@ -7,7 +7,6 @@ import LoadingPage from "../app/loading";
 const Search = ({ getName }: { getName: Function }) => {
   const [text, setText] = useState("");
   const [loading, setLoading] = useState(false);
-  const [notFound, setNotFound] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -24,10 +23,8 @@ const Search = ({ getName }: { getName: Function }) => {
     if (data.login) {
       // Finde e user
       getName(data);
-      setNotFound(false);
     } else {
-      // alert("No results found");
-      setNotFound(true);
+      alert("No results found");
     }
     setLoading(false);
   };
@@ -36,8 +33,6 @@ const Search = ({ getName }: { getName: Function }) => {
     <>
       {loading ? (
         <LoadingPage />
-      ) : notFound ? (
-        <h1 style={{ color: "#fff" }}>No results found</h1>
       ) : (
         <form className={stylesForm.form} onSubmit={(e) => handleSubmit(e)}>
           <input
@@ -47,7 +42,7 @@ const Search = ({ getName }: { getName: Function }) => {
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
-          
+
           <button className={stylesForm.btn_search} type="submit">
             <FaSearch className={stylesForm.icon} />
           </button>

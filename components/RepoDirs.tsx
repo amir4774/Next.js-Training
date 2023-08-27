@@ -1,3 +1,4 @@
+import { Contents } from "../Interfaces/interfaces";
 import stylesRepos from "../styles/repos.module.css";
 
 async function fetchRepoContents(name: string, login: string) {
@@ -12,11 +13,6 @@ async function fetchRepoContents(name: string, login: string) {
   const contents = await res.json();
 
   return contents;
-}
-
-interface Contents {
-  type: string;
-  path: string;
 }
 
 const RepoDirs = async ({ name, login }: { name: string; login: string }) => {

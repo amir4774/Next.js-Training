@@ -5,6 +5,7 @@ export interface User {
   followers: number;
   following: number;
   public_repos: number;
+  bio: string;
 }
 
 export interface RepoProps {
@@ -19,4 +20,9 @@ export interface RepoProps {
 export interface Params {
   name: string;
   login: string;
+}
+
+export interface Contents {
+  type: string;
+  path: string;
 }

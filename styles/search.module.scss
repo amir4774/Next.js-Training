@@ -1,13 +1,27 @@
-@import 'config';
-@import 'button';
-@import 'input';
+@import "config";
+@import "button";
+@import "input";
 
 .form {
-    display: flex;
-    margin-top: 30px;
-    position: relative;
+  display: flex;
+  margin-top: 30px;
+  position: relative;
 }
 
 .icon {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.link {
+  margin: 20px auto;
+  font-size: 2rem;
+
+  a {
+    color: $text;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: darken($text, 20%);
+  }
 }

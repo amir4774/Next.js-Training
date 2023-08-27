@@ -42,9 +42,9 @@ const SelectedRepo = async ({
       <Suspense fallback={<div style={{ color: "#fff" }}>Loading repo...</div>}>
         <Repo repo={repo} mainClass={true} />
       </Suspense>
-      
+
       <hr style={{ margin: "10px 0" }} />
-      
+
       <Suspense fallback={<div style={{ color: "#fff" }}>Loading dirs...</div>}>
         <RepoDirs name={repo.name} login={login} />
       </Suspense>

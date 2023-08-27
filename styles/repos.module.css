@@ -90,3 +90,10 @@
   position: absolute;
   right: 20px;
 }
+
+@media (max-width: 786px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+}

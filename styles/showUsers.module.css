@@ -28,6 +28,7 @@
 }
 .title a {
   font-size: 0.9rem;
+  margin-top: 8px;
 }
 
 .name {
@@ -47,4 +48,15 @@
 }
 .info p {
   margin-right: 20px;
+}
+
+@media (max-width: 786px) {
+  .main_card {
+    flex-direction: column;
+  }
+  .img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto 20px;
+  }
 }

@@ -50,3 +50,15 @@
 .icon {
   font-size: 1.2rem;
 }
+
+.link {
+  margin: 20px auto;
+  font-size: 2rem;
+}
+.link a {
+  color: #afc2d4;
+  text-decoration: underline;
+}
+.link a:hover {
+  color: #6d8fb0;
+}

@@ -13,7 +13,6 @@ const ShowRepos = ({ repos, user }: { repos: RepoProps[]; user: User }) => {
   return (
     <>
       <SearchRepos
-        user={user}
         repos={repos}
         getReposName={(result: RepoProps[]) => setReposAcc(result)}
       />

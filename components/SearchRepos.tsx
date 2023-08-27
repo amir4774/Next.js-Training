@@ -1,12 +1,10 @@
-import { RepoProps, User } from "../Interfaces/interfaces";
+import { RepoProps } from "../Interfaces/interfaces";
 import stylesSearchRepos from "../styles/searchRepos.module.css";
 
 const SearchRepos = ({
-  user,
   repos,
   getReposName,
 }: {
-  user: User;
   repos: RepoProps[];
   getReposName: Function;
 }) => {
