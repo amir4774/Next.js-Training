@@ -3,7 +3,11 @@ import ShowRepos from "../components/ShowRepos";
 import ShowUser from "../components/ShowUser";
 
 async function getMyAccount() {
-  const res = await fetch("https://api.github.com/users/amir4774");
+  const res = await fetch("https://api.github.com/users/amir4774", {
+    next: {
+      revalidate: 100
+    }
+  });
   const data = await res.json();
 
   return data;
