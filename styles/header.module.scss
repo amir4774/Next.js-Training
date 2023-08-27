@@ -1,0 +1,21 @@
+@import "config";
+
+.header {
+  background: url("../images/Cover.png") no-repeat center center / cover;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 30px;
+
+  .title {
+    color: lighten($blue, 20%);
+  }
+}
+
+.links {
+  padding-top: 30px;
+
+  a {
+    padding: 50px;
+  }
+}

@@ -1,0 +1,13 @@
+@import 'config';
+@import 'button';
+@import 'input';
+
+.form {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+
+.icon {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #071422;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #3294f8;
+}
+
+li {
+  list-style: none;
+}
+
+@media (max-width: 786px) {
+  .container {
+    width: 95%;
+  }
+}

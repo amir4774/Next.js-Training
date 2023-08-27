@@ -1,0 +1,50 @@
+%card {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.main_card {
+  @extend %card;
+  width: 100%;
+  min-height: 260px;
+  margin: 30px 0;
+  background-color: $card-background;
+}
+
+@mixin set-post {
+  @extend %card;
+  background: $post;
+  margin-top: 20px;
+
+  h2 {
+    color: $title;
+  }
+
+  p {
+    color: $text;
+    margin: 20px 0 40px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main {
+    display: flex;
+    justify-content: flex-start;
+
+    div {
+      margin-right: 30px;
+    }
+  }
+
+  span {
+    margin-left: 5px;
+  }
+
+  .repo_info {
+    color: $blue;
+  }
+}

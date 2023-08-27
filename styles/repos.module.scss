@@ -1,0 +1,33 @@
+@import 'config';
+@import 'card';
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.post {
+    @include set-post;
+    transition: all 0.3s;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+}
+
+.repo_dirs_title {
+    color: $title;
+    margin: 10px 0;
+}
+
+.main_card {
+    @include set-post;
+    position: relative;
+
+    .github {
+        position: absolute;
+        right: 20px;
+    }
+}

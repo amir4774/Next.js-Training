@@ -1,0 +1,24 @@
+%input {
+  background-color: $input-background-color;
+  border: $input-border;
+  outline: none;
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+%input::placeholder {
+  color: $placeholder;
+}
+
+.main_input {
+  @extend %input;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.search_input {
+  @extend %input;
+  padding: 10px;
+  border-radius: 10px;
+}

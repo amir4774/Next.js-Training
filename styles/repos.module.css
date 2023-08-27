@@ -1,0 +1,92 @@
+.post, .main_card {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.main_card {
+  width: 100%;
+  min-height: 260px;
+  margin: 30px 0;
+  background-color: #0b1b2b;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.post {
+  background: #112131;
+  margin-top: 20px;
+  transition: all 0.3s;
+}
+.post h2 {
+  color: #e7edf4;
+}
+.post p {
+  color: #afc2d4;
+  margin: 20px 0 40px;
+}
+.post .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.post .main {
+  display: flex;
+  justify-content: flex-start;
+}
+.post .main div {
+  margin-right: 30px;
+}
+.post span {
+  margin-left: 5px;
+}
+.post .repo_info {
+  color: #3294f8;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.repo_dirs_title {
+  color: #e7edf4;
+  margin: 10px 0;
+}
+
+.main_card {
+  background: #112131;
+  margin-top: 20px;
+  position: relative;
+}
+.main_card h2 {
+  color: #e7edf4;
+}
+.main_card p {
+  color: #afc2d4;
+  margin: 20px 0 40px;
+}
+.main_card .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.main_card .main {
+  display: flex;
+  justify-content: flex-start;
+}
+.main_card .main div {
+  margin-right: 30px;
+}
+.main_card span {
+  margin-left: 5px;
+}
+.main_card .repo_info {
+  color: #3294f8;
+}
+.main_card .github {
+  position: absolute;
+  right: 20px;
+}

@@ -1,0 +1,50 @@
+.main_card {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.main_card {
+  width: 100%;
+  min-height: 260px;
+  margin: 30px 0;
+  background-color: #0b1b2b;
+}
+
+.img {
+  width: 220px;
+  height: 220px;
+  margin-right: 30px;
+  border-radius: 10px;
+}
+
+.main_card {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.title a {
+  font-size: 0.9rem;
+}
+
+.name {
+  color: #e7edf4;
+}
+
+.summary {
+  margin: 20px 0;
+  line-height: 1.8;
+  color: #afc2d4;
+}
+
+.info {
+  color: #c4c4e3;
+  display: flex;
+  justify-content: flex-start;
+}
+.info p {
+  margin-right: 20px;
+}
