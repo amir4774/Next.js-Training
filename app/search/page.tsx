@@ -30,7 +30,7 @@ const SearchPage = () => {
   };
 
   return (
-    <>
+    <main>
       {user ? (
         <div className={stylesSearch.link}>
           <Link href="/person">Go to persen to see {user.login}</Link>
@@ -38,7 +38,7 @@ const SearchPage = () => {
       ) : (
         <Search getName={(result: User) => userHandler(result)} />
       )}
-    </>
+    </main>
   );
 };
 export default SearchPage;

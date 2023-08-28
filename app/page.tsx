@@ -29,7 +29,7 @@ const HomePage = async () => {
   const repos = await getRepos(user.login);
 
   return (
-    <>
+    <main>
       <ShowUser
         user={user}
         summary="I have been familiar with Front-End for almost 1 years. I am
@@ -39,7 +39,7 @@ const HomePage = async () => {
             gained valuable knowledge in React, TypeScript, and Redux."
       />
       <ShowRepos user={user} repos={repos} />
-    </>
+    </main>
   );
 };
 

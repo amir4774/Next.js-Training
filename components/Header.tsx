@@ -11,14 +11,14 @@ const Header = () => {
   
   return (
     <>
-      <div className={stylesHeader.header}>
+      <header className={stylesHeader.header}>
         <h1 className={stylesHeader.title}>GITHUB PROFILE FINDER</h1>
-        <div className={stylesHeader.links}>
+        <nav className={stylesHeader.links}>
           <Link href="/">Home</Link>
           <Link href="/search">Search</Link>
           <Link href="/person">{userContent.login ? userContent.login : 'Person'}</Link>
-        </div>
-      </div>
+        </nav>
+      </header>
     </>
   );
 };

@@ -30,7 +30,7 @@ const SelectedRepo = async ({
   const repo = await getRepo(name, login);
 
   return (
-    <div className={stylesRepos.main_card}>
+    <main className={stylesRepos.main_card}>
       <a
         href={`https://github.com/${login}/${name}`}
         target="_blank"
@@ -48,7 +48,7 @@ const SelectedRepo = async ({
       <Suspense fallback={<div style={{ color: "#fff" }}>Loading dirs...</div>}>
         <RepoDirs name={repo.name} login={login} />
       </Suspense>
-    </div>
+    </main>
   );
 };
 
