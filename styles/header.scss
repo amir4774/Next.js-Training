@@ -14,13 +14,19 @@
 
 .links {
   padding-top: 30px;
-
   a {
-    margin: 0 60px;
+    margin: 0 60px 0 40px;
   }
 }
 
 .link.choose {
   font-weight: bolder;
   font-size: 1.1rem;
+}
+
+@media (max-width: $mobile) {
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
