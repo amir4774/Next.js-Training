@@ -1,3 +1,9 @@
+# Project Overview
+
+
+https://github.com/amir4774/Next.js-Training/assets/135974392/48fe2a3c-ff45-4c55-9b61-68aca1e965ef
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
