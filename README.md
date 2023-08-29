@@ -1,7 +1,5 @@
 # Project Overview
-
-
-https://github.com/amir4774/Next.js-Training/assets/135974392/48fe2a3c-ff45-4c55-9b61-68aca1e965ef
+On the home page, you can see my account information, and on the search page, you can search for the Github account information of the person you want and view this information on the person page.
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
