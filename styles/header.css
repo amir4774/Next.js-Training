@@ -13,5 +13,10 @@
   padding-top: 30px;
 }
 .links a {
-  padding: 50px;
+  margin: 0 60px;
+}
+
+.link.choose {
+  font-weight: bolder;
+  font-size: 1.1rem;
 }
