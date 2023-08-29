@@ -14,8 +14,9 @@
 
 .links {
   padding-top: 30px;
+
   a {
-    margin: 0 60px 0 40px;
+    margin: 0 60px;
   }
 }
 
@@ -25,8 +26,18 @@
 }
 
 @media (max-width: $mobile) {
+  .header {
+    .title {
+      font-size: 1.7rem;
+    }
+  }
+
   .links {
     display: flex;
     justify-content: space-evenly;
+
+    a {
+      margin: 0;
+    }
   }
 }

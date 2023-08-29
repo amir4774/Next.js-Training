@@ -5,6 +5,10 @@
   width: 100%;
   color: #fff;
   font-size: 1.5rem;
+
+  @media (max-width: $mobile) {
+    font-size: 1.3rem;
+  }
 }
 
 %input::placeholder {
@@ -15,6 +19,9 @@
   @extend %input;
   padding: 20px;
   border-radius: 10px 0 0 10px;
+  @media (max-width: $mobile) {
+    padding: 15px;
+  }
 }
 
 .search_input {

@@ -13,7 +13,7 @@
   padding-top: 30px;
 }
 .links a {
-  margin: 0 60px 0 40px;
+  margin: 0 60px;
 }
 
 .link.choose {
@@ -22,8 +22,14 @@
 }
 
 @media (max-width: 786px) {
+  .header .title {
+    font-size: 1.7rem;
+  }
   .links {
     display: flex;
     justify-content: space-evenly;
+  }
+  .links a {
+    margin: 0;
   }
 }

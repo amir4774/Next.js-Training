@@ -26,6 +26,11 @@
   color: #fff;
   font-size: 1.5rem;
 }
+@media (max-width: 786px) {
+  .search_input, .main_input {
+    font-size: 1.3rem;
+  }
+}
 
 .search_input::placeholder, .main_input::placeholder {
   color: #3A536B;
@@ -34,6 +39,11 @@
 .main_input {
   padding: 20px;
   border-radius: 10px 0 0 10px;
+}
+@media (max-width: 786px) {
+  .main_input {
+    padding: 15px;
+  }
 }
 
 .search_input {
